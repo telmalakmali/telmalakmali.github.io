@@ -3,7 +3,7 @@
 Personal portfolio website of Telma Lakmali.
 
 ## Live Website
-[Visit Portfolio](https://telma_lakmali.github.io)
+[Visit Portfolio](https://telmalakmali.github.io)
 
 ## About
 This portfolio highlights my background in:
