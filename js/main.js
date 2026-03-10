@@ -4,7 +4,10 @@ import skillbar from "./skillbar.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init({
-    once: true,
+    duration: 1000,
+    easing: "ease-in-out",
+    once: false,
+    mirror: true
   });
   form();
   skillbar();
@@ -12,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector("#nav");
   const navBtn = document.querySelector("#nav-btn");
   const navBtnImg = document.querySelector("#nav-btn-img");
+  const goToTop = document.querySelector("#goToTop");
 
   //Hamburger menu
   navBtn.onclick = () => {

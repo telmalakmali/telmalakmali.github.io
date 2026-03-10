@@ -1,446 +1,781 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Sample</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <header id="header" class="header">
-      <div class="container container-lg">
-        <div class="header-nav">
-          <a
-            href="#home"
-            class="logo"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            >J.Sample</a
-          >
-          <nav id="nav" class="nav">
-            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
-              <li class="nav-item">
-                <a href="#home" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link">Works</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telma Lakmali</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="container container-lg">
+      <div class="header-nav">
+        <a href="#home" class="logo" data-aos="fade-down" data-aos-duration="1000">Telma.Lakmali</a>
+
+        <nav id="nav" class="nav">
+          <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#profile" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="#journey" class="nav-link">Journey</a>
+            </li>
+            <li class="nav-item">
+              <a href="#highlights" class="nav-link">Highlights</a>
+            </li>
+            <li class="nav-item">
+              <a href="#beyond-work" class="nav-link">Beyond Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <button id="nav-btn" class="nav-btn">
+            <img id="nav-btn-img" src="img/icons/open.svg" alt="Navigation button" />
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: MY IMAGE AND BUTTONS -->
+  <section id="home" class="hero">
+    <div class="container container-lg">
+      <div class="hero-row" data-aos="fade-zoom-in" data-aos-easing="ease-in-out" data-aos-delay="500"
+        data-aos-duration="1000">
+
+        <div class="hero-img">
+          <img src="img/hero/hero.png" alt="Telma Lakmali" />
+        </div>
+
+        <div class="hero-content">
+          <span class="hero-greeting">Hello, I am</span>
+          <h1 class="hero-heading hero-name">Telma Lakmali</h1>
+          <span class="hero-heading-subtitle hero-name">
+            Quality Assurance | Business Analysis | Client Solutions
+          </span>
+
+          <div class="about-social-list">
+            <div class="social-links-row">
+              <a href="https://github.com/telmalakmali" target="_blank" rel="noopener noreferrer">
+                <img src="img/social_icons/github.svg" alt="GitHub" />
+              </a>
+
+              <a href="https://www.linkedin.com/in/telma-lakmali-qalife999" target="_blank" rel="noopener noreferrer">
+                <img src="img/social_icons/linkedin.svg" alt="LinkedIn" />
+              </a>
+
+              <a href="https://www.facebook.com/telma.lakmali" target="_blank" rel="noopener noreferrer">
+                <img src="img/social_icons/facebook.svg" alt="Facebook" />
+              </a>
+
+              <a href="https://www.instagram.com/telmalakmali" target="_blank" rel="noopener noreferrer">
+                <img src="img/social_icons/instagram.svg" alt="Instagram" />
+              </a>
+
+              <a href="javascript:void(0);" onclick="toggleMusic()">
+                <img src="img/social_icons/music.svg" alt="Music" />
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#journey" class="btn">My Portfolio</a>
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="assets/Telma_Lakmali_CV.pdf" download class="btn">Download CV</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="industry-strip-wrapper">
+        <div class="industry-strip">
+          <div class="industry-track">
+            <span>Supply Chain</span>
+            <span>Defense Simulation</span>
+            <span>Machine Learning</span>
+            <span>Food Technology</span>
+            <span>Blockchain</span>
+            <span>Logistics</span>
+            <span>System Integration</span>
+            <span>Migration Projects</span>
+
+            <span>Supply Chain</span>
+            <span>Defense Simulation</span>
+            <span>Machine Learning</span>
+            <span>Food Technology</span>
+            <span>Blockchain</span>
+            <span>Logistics</span>
+            <span>System Integration</span>
+            <span>Migration Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PROFILE -->
+  <section id="profile" class="profile-section">
+    <div class="container">
+
+      <div class="profile-title">
+        <h2 class="title">PROFILE</h2>
+      </div>
+
+      <div class="profile-row">
+
+        <!-- LEFT SIDE -->
+        <div class="profile-content">
+
+          <p class="profile-descr">
+            ISTQB Certified Software Quality Assurance Consultant with over 10 years of experience across multiple
+            industries including supply chain, defense simulation and AI, blockchain, food technology, and oil & gas
+            systems.
+
+            My expertise spans Quality Assurance, Business Analysis, Project Management, and Product-focused delivery.
+            I collaborate closely with stakeholders to translate business requirements into functional solutions,
+            manage delivery risks, support sprint planning, and align cross-functional teams toward business objectives.
+
+            I bring strong knowledge of SDLC/STLC, Agile methodologies, test strategy, defect lifecycle management,
+            and complex system integrations. My experience covers functional and non-functional testing including
+            SIT, UAT, API, mobile, web, and cloud environments.
+
+            I have worked on performance validation, integration testing, backend verification, enterprise SaaS
+            platforms, supply chain integrations, and legacy system migrations.
+
+            Beyond technical capability, I am known for being a positive, approachable professional who is enjoyable
+            to work with and a strong team player.
+          </p>
+
+          <!-- SKILLS BELOW PARAGRAPH -->
+          <div class="skills-section">
+            <h3 class="skill-panel-title">Core Skills</h3>
+
+            <ul class="skill-tag-list">
+              <li>SDLC</li>
+              <li>STLC</li>
+              <li>CI/CD Concepts</li>
+
+              <li>Test Automation</li>
+              <li>API Testing</li>
+              <li>Database Testing</li>
+              <li>SQL Validation</li>
+
+              <li>Functional Testing</li>
+              <li>Non-Functional Testing</li>
+              <li>Static Testing</li>
+
+              <li>End-to-End Validation</li>
+              <li>Regression Testing</li>
+              <li>SIT</li>
+              <li>UAT</li>
+              <li>Smoke Testing</li>
+              <li>Security Testing</li>
+
+              <li>Test Planning</li>
+              <li>Test Audits</li>
+              <li>Test Design</li>
+              <li>Traceability Matrix</li>
+
+              <li>Defect Lifecycle Management</li>
+
+              <li>Test Environment & Data</li>
+
+              <li>Integrations & Migration Support</li>
+
+              <li>Startup QA Framework Setup</li>
+
+              <li>Agile / Scrum / Waterfall</li>
+              <li>Retrospectives</li>
+
+              <li>Stakeholder Collaboration</li>
+              <li>Test Coordination</li>
+              <li>Mentoring QA Engineers</li>
             </ul>
-            <button id="nav-btn" class="nav-btn">
-              <img
-                id="nav-btn-img"
-                src="img/icons/open.svg"
-                alt="Navigation button"
-              />
-            </button>
-          </nav>
+          </div>
+
+          <!-- SERVICE CARDS UNDER SKILLS -->
+          <div class="profile-services">
+
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+              <img class="service-card-img" src="img/services/01.svg" alt="" />
+              <h3 class="service-card-title">Quality Assurance</h3>
+              <p>
+                End-to-end testing across enterprise SaaS and supply chain platforms including Functional,
+                Regression, SIT, UAT, Security and Integration testing. Strong expertise in SDLC/STLC,
+                defect lifecycle management, test strategy planning, and release readiness across
+                complex system implementations.
+              </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <img class="service-card-img" src="img/services/02.svg" alt="" />
+              <h3 class="service-card-title">Business Analysis</h3>
+              <p>
+                Translating business and technical requirements into structured test artefacts with clear
+                traceability. Working closely with product owners, engineers, and delivery teams to ensure
+                requirements clarity, solution alignment, and quality-driven delivery.
+              </p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+              <img class="service-card-img" src="img/services/03.svg" alt="" />
+              <h3 class="service-card-title">Project & Product Delivery</h3>
+              <p>
+                Supporting Agile delivery through sprint planning, test estimation, risk identification,
+                and cross-team coordination. Experienced in enterprise implementations, automation
+                feasibility analysis, and supporting large-scale system migrations.
+              </p>
+            </div>
+
+          </div>
+
         </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="profile-skills">
+          <div class="skill-panel">
+            <h3 class="skill-panel-title">Tech Stack</h3>
+
+            <ul class="skill-tag-list tech-stack-list">
+              <li>Playwright</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Postman</li>
+              <li>SQL</li>
+              <li>GitHub</li>
+              <li>AWS Cloud</li>
+              <li>Salesforce</li>
+              <li>Power BI</li>
+              <li>Amplitude</li>
+              <li>Jira</li>
+              <li>TestRail</li>
+              <li>Confluence</li>
+              <li>Trello</li>
+              <li>ClickUp</li>
+              <li>SharePoint</li>
+              <li>Microsoft Office 365</li>
+              <li>Figma</li>
+              <li>XMLPad</li>
+              <li>Altova XMLSpy</li>
+              <li>Notepad++</li>
+              <li>EDI Notepad</li>
+              <li>EDI</li>
+              <li>XML</li>
+              <li>IDoc</li>
+              <li>JSON</li>
+              <li>EASI</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-    </header>
 
-    <section id="home" class="hero">
-      <div class="container container-lg">
-        <div
-          class="hero-row"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="500"
-          data-aos-duration="1000"
-        >
-          <div class="hero-content">
-            <span class="hero-greeting"> Hello, I am</span>
-            <h1 class="hero-heading">John Sample</h1>
-            <span class="hero-heading-subtitle"
-              >UI/UX Designer & Software Developer</span
-            >
-            <div class="about-social-list">
-              <div class="social-links-row">
-                <a href="#!">
-                  <img
-                    src="img/social_icons/github.svg"
-                    alt="Link to GitHub account"
-                  />
-                </a>
+    </div>
+  </section>
 
-                <a href="#!">
-                  <img
-                    src="img/social_icons/linkedin.svg"
-                    alt="Link to linkedin profile"
-                  />
-                </a>
-
-                <a href="#!">
-                  <img
-                    src="img/social_icons/xing.svg"
-                    alt="Link to Xing profile"
-                  />
-                </a>
-
-                <a href="#!">
-                  <img
-                    src="img/social_icons/facebook.svg"
-                    alt="Link to facebook profile"
-                /></a>
-                <a href="#!">
-                  <img
-                    src="img/social_icons/instagram.svg"
-                    alt="Link to instagram profile"
-                /></a>
-              </div>
-            </div>
-
-            <div>
-              <a href="#projects" class="btn">My Portfolio</a>
-              <a href="#contact" class="btn btn-white">Contact Me</a>
-            </div>
-          </div>
-          <div class="hero-img">
-            <img
-              src="img/hero/hero.png"
-              alt="Picture of Christian Buehner taken from Unsplash</a>
-              "
-            />
-          </div>
-        </div>
+  <!-- SECTION 3: PROFESSIONAL JOURNEY -->
+  <section id="journey" class="professional-journey-section">
+    <div class="container">
+      <div class="journey-title">
+        <h2 class="title">PROFESSIONAL JOURNEY</h2>
       </div>
-    </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-title">
-          <h2 class="title">About Me</h2>
-        </div>
-        <div class="about-row">
-          <div
-            class="about-content"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <p class="about-descr">
-              Hi, I’m John Sample, a passionate designer and developer
-              specializing in web development, graphic design and photography.
-              With over 10 years of experience, I love transforming ideas into
-              impactful creations that connect and inspire. Outside of work, I
-              enjoy exploring new places, learning new skills and capturing
-              life’s moments. <br /><br />Let’s collaborate and bring your
-              vision to life!
-            </p>
-            <div class="about-download-btn">
-              <a href="#!" class="btn btn-white">Download CV</a>
-            </div>
-          </div>
-          <div
-            class="about-skills"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <div class="skill">
-              <div class="skill-title">Web Design</div>
-              <div class="skill-percent">95%</div>
-              <div class="skill-bar__progress">
-                <div class="skill-bar__fill" data-progress="95"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">HTML/CSS</div>
-              <div class="skill-percent">90%</div>
-              <div class="skill-bar__progress">
-                <div class="skill-bar__fill" data-progress="90"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">JavaScript</div>
-              <div class="skill-percent">65%</div>
-              <div class="skill-bar__progress">
-                <div class="skill-bar__fill" data-progress="65"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">Photoshop</div>
-              <div class="skill-percent">80%</div>
-              <div class="skill-bar__progress">
-                <div class="skill-bar__fill" data-progress="80"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="services-row">
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="50"
-          >
-            <img class="service-card-img" src="img/services/01.svg" alt="" />
-            <h3 class="service-card-title">UI/UX Design</h3>
-            <p>
-              Crafting intuitive and visually appealing user interfaces that
-              enhance experiences through thoughtful, creative designs.
-            </p>
-          </div>
-
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <img class="service-card-img" src="img/services/02.svg" alt="" />
-            <h3 class="service-card-title">Frontend Development</h3>
-            <p>
-              Developing responsive, accessible, and dynamic websites using
-              modern tools to create seamless, engaging experiences.
-            </p>
-          </div>
-
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img class="service-card-img" src="img/services/03.svg" alt="" />
-            <h3 class="service-card-title">Content Writing</h3>
-            <p>
-              Creating compelling and audience-focused content that effectively
-              communicates ideas and delivers meaningful value.
-            </p>
-          </div>
-        </div>
+      <div class="journey-intro" data-aos="fade-up" data-aos-duration="1000">
+        <p>
+          A summary of my professional background, education, certifications, community involvement,
+          and selected project experience across quality assurance, business analysis, and delivery support.
+        </p>
       </div>
-    </section>
 
-    <section id="projects" class="projects">
-      <div class="container container-lg">
-        <div class="projects-title">
-          <h2 class="title">Works</h2>
-        </div>
-
-        <div class="projects-row">
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="1000"
-          >
-            <a href="#!">
-              <img class="project-img" src="img/works/01.jpg" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Finance Dashboard</h5>
-                  <p class="white">UI/UX Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            <a href="#!">
-              <img class="project-img" src="img/works/02.jpg" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Product design</h5>
-                  <p class="white">UI/UX Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="600"
-            data-aos-duration="1000"
-          >
-            <a href="#!">
-              <img class="project-img" src="img/works/03.jpg" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Landing Page</h5>
-                  <p class="white">UI/UX Design, Web Development</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="900"
-            data-aos-duration="1000"
-          >
-            <a href="#!">
-              <img class="project-img" src="img/works/04.jpg" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Portfolio</h5>
-                  <p class="white">Web Development</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="1200"
-            data-aos-duration="1000"
-          >
-            <a href="#!">
-              <img class="project-img" src="img/works/05.jpg" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Cosmic Sea</h5>
-                  <p class="white">UI/UX Design, Web Development</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            class="project-box"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="1500"
-            data-aos-duration="1000"
-          >
-            <a href="#!">
-              <img class="project-img" src="img/works/06.jpg" alt="" />
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">eCommerce</h5>
-                  <p class="white">Web Development</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="contact-title">
-          <h2 class="title">Contact</h2>
-        </div>
-        <div class="contact-content">
+      <div class="journey-grid">
+        <div class="journey-card journey-card-large" data-aos="fade-up" data-aos-duration="1000">
+          <span class="journey-tag">PROFESSIONAL SUMMARY</span>
+          <h3>QA, BA & Implementation Experience Across Multiple Industries</h3>
           <p>
-            Tell me about your project.
-            <br />
-            Let's talk and work together!
+            I have worked across enterprise SaaS, startup, supply chain, blockchain, defense simulation, and food
+            technology environments. My experience includes test planning, test design, and test execution across SIT
+            and UAT phases, defect lifecycle management, test estimation, and automation feasibility analysis. I also
+            create QA dashboards and reporting to track quality metrics and testing progress. I collaborate with
+            stakeholders and global cross-functional teams to ensure effective communication, customer success, and
+            release readiness.
           </p>
         </div>
 
-        <form class="contactForm" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="input-box">
-            <input type="text" name="name" placeholder="Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-          </div>
+        <div class="journey-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <span class="journey-tag">New Zealand Experience</span>
+          <h3>FoodME Ltd (trading as Favour)</h3>
+          <p>
+            Supporting structured QA processes, test design consistency, requirement traceability,
+            and quality improvements in a Django-based application environment.
+          </p>
+        </div>
 
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <div
-            class="contact-button"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-out"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          >
-            <button href="#!" class="btn btn-red" name="submit" type="submit">
-              Send Message
-            </button>
+        <div class="journey-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <span class="journey-tag">Previous Experience</span>
+          <h3>Infor</h3>
+          <p>
+            Delivered QA and implementation support across global supply chain systems, handling functional,
+            integration, regression, and end-to-end testing while collaborating with international teams.
+          </p>
+
+          <div class="brand-showcase">
+            <h4 class="brand-showcase-title">Worked with brands such as</h4>
+
+            <div class="brand-logos">
+              <div class="brand-logo-item">
+                <img src="img/brands/adidas.png" alt="Adidas logo" />
+              </div>
+
+              <div class="brand-logo-item">
+                <img src="img/brands/vf-corporation.png" alt="VF Corporation logo" />
+              </div>
+
+              <div class="brand-logo-item">
+                <img src="img/brands/elbit-systems.png" alt="Elbit Systems logo" />
+              </div>
+
+              <div class="brand-logo-item">
+                <img src="img/brands/centric-brands.png" alt="Centric Brands logo" />
+              </div>
+
+              <div class="brand-logo-item">
+                <img src="img/brands/cabelas.png" alt="Cabelas logo" />
+              </div>
+
+              <div class="brand-logo-item">
+                <img src="img/brands/sanmar.png" alt="SanMar Corporation logo" />
+              </div>
+
+              <div class="brand-logo-item">
+                <img src="img/brands/bed-bath-beyond.png" alt="Bed Bath and Beyond logo" />
+              </div>
+            </div>
           </div>
-        </form>
-        <div class="response"></div>
+        </div>
+
+        <div class="journey-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <span class="journey-tag">Education & Certification</span>
+          <h3>Academic Background & ISTQB Certification</h3>
+          <p>
+            Currently completing a Master of Software Engineering in Auckland, with prior qualifications
+            in International Business and Management Information Systems. Also ISTQB Certified with strong
+            practical application in structured QA delivery, process quality, and release confidence.
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- SECTION 4: EXPERIENCE HIGHLIGHTS + EDUCATION + PROJECTS + COMMUNITY -->
+  <section id="highlights" class="highlights-section">
+    <div class="container">
+      <div class="highlights-title">
+        <h2 class="title">EXPERIENCE HIGHLIGHTS & EDUCATION, PROJECTS & COMMUNITY INVOLVEMENT</h2>
+      </div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-row">
-          <div class="social-links-row footer-social">
-            <a href="#!">
-              <img
-                src="img/social_icons/github.svg"
-                alt="Link to GitHub account"
-              />
-            </a>
+      <div class="journey-dual-layout">
+        <div class="journey-left">
+          <div class="timeline-wrapper">
+            <div class="timeline-title" data-aos="fade-up" data-aos-duration="1000">
+              <h3>Experience Highlights</h3>
+            </div>
 
-            <a href="#!">
-              <img
-                src="img/social_icons/linkedin.svg"
-                alt="Link to linkedin profile"
-              />
-            </a>
+            <div class="timeline">
+              <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Nov 2025 – Mar 2026</span>
 
-            <a href="#!">
-              <img src="img/social_icons/xing.svg" alt="Link to Xing profile" />
-            </a>
+                  <div class="timeline-company">
+                    <img src="img/companies/favour.png" alt="FoodME logo" class="timeline-logo" />
+                    <div class="timeline-company-text">
+                      <h4>FoodME Ltd (trading as Favour)</h4>
+                      <p class="timeline-role">Intern QA | MSE Capstone</p>
+                    </div>
+                  </div>
 
-            <a href="#!">
-              <img
-                src="img/social_icons/facebook.svg"
-                alt="Link to facebook profile"
-            /></a>
+                  <p>
+                    Contributed to structured QA practices, testing consistency, mobile validation,
+                    and usability improvements within a product environment. Also supported requirement
+                    traceability, test design alignment, and clearer release readiness across the team.
+                  </p>
+                </div>
+              </div>
 
-            <a href="#!">
-              <img
-                src="img/social_icons/instagram.svg"
-                alt="Link to instagram profile"
-            /></a>
+              <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Jun 2016 – May 2025</span>
+
+                  <div class="timeline-company">
+                    <img src="img/companies/infor.png" alt="Infor logo" class="timeline-logo" />
+                    <div class="timeline-company-text">
+                      <h4>Infor</h4>
+                      <div class="timeline-role-list">
+                        <span>Principal Quality Assurance Consultant</span>
+                        <span>Senior Quality Assurance Consultant</span>
+                        <span>Quality Assurance Consultant</span>
+                        <span>Associate Quality Assurance Consultant</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>
+                    Progressed through multiple QA consulting roles supporting large-scale enterprise implementations
+                    and complex system integration programs for major global brands. Collaborated with global
+                    stakeholders across planning, test execution, defect management, and delivery support to ensure
+                    high-quality releases.
+                  </p>
+
+                  <div class="solution-showcase">
+                    <h5 class="solution-title">Enterprise solutions worked on</h5>
+
+                    <div class="solution-list">
+                      <span>Factory Management</span>
+                      <span>Procure-to-Pay</span>
+                      <span>Invoice & Payment Management</span>
+                      <span>Supply Chain Visibility</span>
+                      <span>Supply Collaboration</span>
+                      <span>Logistics Operations</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Jan 2024 – Jun 2024</span>
+
+                  <div class="timeline-company">
+                    <img src="img/companies/mynth.png" alt="Mynth logo" class="timeline-logo" />
+                    <div class="timeline-company-text">
+                      <h4>Mynth</h4>
+                      <p class="timeline-role">Software Quality Assurance</p>
+                    </div>
+                  </div>
+
+                  <p>
+                    Worked in a startup-style environment performing functional and integration testing
+                    for blockchain-based systems. Supported collaborative delivery by maintaining test
+                    artefacts, identifying defects, and contributing to quality visibility for the team.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Aug 2013 – Jul 2016</span>
+
+                  <div class="timeline-company">
+                    <img src="img/companies/simcentric.png" alt="Simcentric Technologies logo" class="timeline-logo" />
+                    <div class="timeline-company-text">
+                      <h4>Simcentric Technologies</h4>
+                      <div class="timeline-role-list">
+                        <span>Quality Assurance Engineer</span>
+                        <span>Quality Assurance Engineer Associate</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>
+                    Supported quality assurance for desktop software in the defense simulation domain,
+                    including Agile collaboration, API validation, and defect reporting. Also contributed
+                    to test design, execution tracking, and cross-team coordination during delivery cycles.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="journey-right">
+          <div class="journey-side-title" data-aos="fade-up" data-aos-duration="1000">
+            <h3>Education, Projects & Community Involvement</h3>
           </div>
 
-          <div class="footer-copyright">
-            <p>&copy; Copyright John Sample 2024</p>
+          <div class="journey-bottom-grid">
+            <div class="info-panel" data-aos="fade-up" data-aos-duration="1000">
+              <h3>Education</h3>
+              <ul>
+                <li>
+                  <strong>Master of Software Engineering</strong><br>
+                  Yoobee College of Creative Innovation, Auckland<br>
+                  <span>Completed: Apr 2026</span>
+                </li>
+                <li>
+                  <strong>Master of Business Administration in International Business</strong><br>
+                  Anglia Ruskin University<br>
+                  <span>Completed: Feb 2018</span>
+                </li>
+                <li>
+                  <strong>BSc in Management Information Systems</strong><br>
+                  University College Dublin<br>
+                  <span>Completed: Aug 2013</span>
+                </li>
+                <li>
+                  <strong>Certification:</strong><br>
+                  ISTQB Certified Tester Foundation Level (CTFL)<br>
+                  <span>Completed: Dec 2017</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-panel" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <h3>Featured Public Projects</h3>
+              <ul>
+                <li>
+                  <strong>
+                    <a href="https://github.com/telmalakmali/sqa-starter-framework" target="_blank"
+                      rel="noopener noreferrer">
+                      Lean QA Starter Kit for Software Startups
+                    </a>
+                  </strong><br>
+                  A lightweight QA starter kit for fast-moving startups. It includes Python automation scripts,
+                  QA templates, entry and exit criteria support, a test plan template, a QA maturity checklist,
+                  and a workflow diagram to help teams move from ad-hoc testing to simple, repeatable, and scalable
+                  QA practices.
+                </li>
+                <li>
+                  <strong>
+                    <a href="https://github.com/shielaumalii/SmartBargain/tree/main" target="_blank"
+                      rel="noopener noreferrer">
+                      SmartBargain
+                    </a>
+                  </strong><br>
+                  A team project developed by two contributors using Python, Django, HTML, CSS, JavaScript, and SQLite.
+                  It uses Singleton and Factory design patterns and includes buyer and seller flows, product management,
+                  negotiation handling, contact messaging, and dashboard-based interactions.
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-panel" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <h3>Community Involvement</h3>
+              <ul>
+                <li>
+                  <strong>New Zealand Red Cross</strong><br>
+                  Auckland<br>
+                  <span>Starting: Feb 2026</span>
+                </li>
+                <li>
+                  <strong>CSR Activities in Sri Lanka</strong><br>
+                  Participated in community and social responsibility initiatives supporting local outreach and
+                  contribution.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-
-    <div id="goToTop" class="goToTop">
-      <a href="#home">
-        <img src="img/icons/arrow_up.svg" alt="Back to top"
-      /></a>
     </div>
+  </section>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="module" src="js/main.js"></script>
-  </body>
+  <!-- SECTION 5: BEYOND WORK -->
+  <section id="beyond-work" class="photo-strip">
+    <div class="container container-lg">
+      <h2 class="title">BEYOND WORK</h2>
+
+      <div class="photo-viewport">
+        <div class="photo-track">
+          <div class="photo-set">
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/one.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/two.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/three.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/four.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/five.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/six.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/seven.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/eight.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/nine.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/ten.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/11.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/12.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="photo-set" aria-hidden="true">
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/one.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/two.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/three.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/four.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/five.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/six.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/seven.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/eight.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/nine.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/ten.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/11.mp4" type="video/mp4">
+            </video>
+            <video muted loop playsinline preload="metadata">
+              <source src="img/moments/12.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CONTACT ME -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-title">
+        <h2 class="title">CONTACT ME</h2>
+      </div>
+
+      <div class="contact-content">
+        <p>Let’s connect and build something impactful</p>
+      </div>
+
+      <form class="contactForm" onsubmit="sendMail(event)">
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Name" required />
+        </div>
+
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+        <div class="contact-button">
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+
+      <div class="response"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="social-links-row footer-social">
+          <a href="https://github.com/telmalakmali" target="_blank" rel="noopener noreferrer">
+            <img src="img/social_icons/github.svg" alt="GitHub" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/telma-lakmali-qalife999" target="_blank" rel="noopener noreferrer">
+            <img src="img/social_icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+
+          <a href="https://www.facebook.com/telma.lakmali" target="_blank" rel="noopener noreferrer">
+            <img src="img/social_icons/facebook.svg" alt="Facebook" />
+          </a>
+
+          <a href="https://www.instagram.com/telmalakmali" target="_blank" rel="noopener noreferrer">
+            <img src="img/social_icons/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+
+        <div class="footer-copyright">
+          <p>&copy; 2026 Telma Lakmali</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="goToTop" class="goToTop">
+    <a href="#home">
+      <img src="img/icons/arrow_up.svg" alt="Back to top" />
+    </a>
+  </div>
+
+  <script>
+    const audio = new Audio("assets/music.mp3");
+    audio.loop = true;
+
+    function toggleMusic() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="module" src="js/main.js"></script>
+
+  <script>
+    function sendMail(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const subject = encodeURIComponent("Portfolio Contact Message");
+      const body = encodeURIComponent(`Name: ${name}\n\nMessage:\n${message}`);
+
+      window.location.href =
+        `mailto:telmalakmali555@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+
+  <script>
+    document.querySelectorAll(".photo-track video").forEach(v => {
+      v.addEventListener("mouseenter", () => v.play().catch(() => { }));
+      v.addEventListener("mouseleave", () => {
+        v.pause();
+        v.currentTime = 0;
+      });
+    });
+  </script>
+</body>
+
 </html>
