@@ -61,10 +61,13 @@
 
 @media (max-width: 992px) {
 
-  .profile-row,
+  /* FIXED: separated flex and grid behaviors */
+  .profile-row {
+    flex-direction: column;
+  }
+
   .journey-dual-layout {
     grid-template-columns: 1fr;
-    flex-direction: column;
   }
 
   .profile-content,
@@ -380,15 +383,15 @@
     max-height: 30px;
   }
 
-  .photo-track video {
-    height: 150px;
+  .photo-set img {
+    width: 140px;
+    height: 140px;
   }
 
-  .photo-track video:hover {
-    height: 200px;
-    transform: translateY(-8px) scale(1.03);
+  .photo-set img:hover {
+    transform: translateY(-8px) scale(1.14);
   }
-  
+
   .contact-button {
     display: flex;
     justify-content: center;
@@ -459,13 +462,13 @@
     height: 34px;
   }
 
-  .photo-track video {
-    height: 130px;
+  .photo-set img {
+    width: 120px;
+    height: 120px;
   }
 
-  .photo-track video:hover {
-    height: 160px;
-    transform: none;
+  .photo-set img:hover {
+    transform: translateY(-6px) scale(1.1);
   }
 
   .industry-track span {
@@ -513,10 +516,9 @@
     animation-duration: 160s;
   }
 
-  .photo-track video:hover {
-    height: 150px;
+  .photo-set img:hover {
     transform: none;
-    box-shadow: none;
+    box-shadow: 0 10px 24px rgba(12, 22, 24, 0.06);
   }
 
   .industry-strip:hover .industry-track {
@@ -530,5 +532,4 @@
   .skill-tag-list li:hover {
     transform: none;
   }
-
 }
