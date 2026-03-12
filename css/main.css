@@ -645,6 +645,97 @@ h5 {
   line-height: 1.8;
   color: var(--supportive-text-color);
 }
+/* Recommendations */
+.recommendations-section {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbfd 100%);
+  overflow: hidden;
+}
+
+.recommendations-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.recommendations-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scrollRecommendations 45s linear infinite;
+}
+
+.recommendations-track:hover {
+  animation-play-state: paused;
+}
+
+.recommendation-card {
+  width: 360px;
+  min-height: 320px;
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(12, 22, 24, 0.08);
+  border-radius: 20px;
+  padding: 26px 24px;
+  box-shadow: 0 10px 24px rgba(12, 22, 24, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(12, 22, 24, 0.1);
+}
+
+.recommendation-stars {
+  font-size: 18px;
+  color: #d4af37;
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+}
+
+.recommendation-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--supportive-text-color);
+  margin-bottom: 18px;
+}
+
+.recommendation-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-accent);
+  margin-bottom: 6px;
+}
+
+.recommendation-card span {
+  display: block;
+  font-size: 14px;
+  color: var(--gray-text-color);
+  margin-bottom: 14px;
+}
+
+.recommendation-card a {
+  display: inline-block;
+  color: #0a66c2;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.recommendation-card a:hover {
+  color: #004182;
+  border-bottom: 1px solid #004182;
+}
+
+@keyframes scrollRecommendations {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 /* Highlights Section */
 .highlights-section {
