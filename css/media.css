@@ -60,6 +60,7 @@
 }
 
 @media (max-width: 992px) {
+
   .profile-row,
   .journey-dual-layout {
     grid-template-columns: 1fr;
@@ -247,6 +248,7 @@
 }
 
 @media (max-width: 768px) {
+
   .container,
   .photo-viewport {
     padding-left: 20px;
@@ -386,9 +388,20 @@
     height: 200px;
     transform: translateY(-8px) scale(1.03);
   }
+  
+  .contact-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-button .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 540px) {
+
   .container,
   .photo-viewport {
     padding-left: 16px;
@@ -517,4 +530,5 @@
   .skill-tag-list li:hover {
     transform: none;
   }
+
 }
